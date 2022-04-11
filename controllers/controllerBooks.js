@@ -24,7 +24,7 @@ const createBooks =(req, res)=>{
 
 //deleting a result
 const deleteBook =(req ,res)=>{
-    res.json(books.filter((book)=>book.title!==req.params.title))
+    res.json(books.filter((book)=>book.title!=req.params.title))
 }
  
 module.exports={getBooks,createBooks,deleteBook }
